@@ -44,10 +44,6 @@
   --shadow:      rgba(196,75,26,0.12);
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;
-}
 
 body {
   background: var(--bg);
