@@ -1,4 +1,3 @@
-
 {
   "extends": [
     "development"
@@ -10,7 +9,8 @@
         "ignore": [
           "mask-image",
           "user-select",
-          "backdrop-filter"
+          "backdrop-filter",
+          "min-height: auto"
         ]
       }
     ],
