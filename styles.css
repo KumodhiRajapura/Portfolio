@@ -175,22 +175,20 @@ nav {
   pointer-events: none;
 }
 
-/* Section background numbers — large visible watermark */
+/* Section background numbers — visible and properly placed */
 .section-number {
   position: absolute;
-  right: -1rem;
-  bottom: 0;
+  right: 2rem;
+  bottom: 3%;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(10rem, 22vw, 20rem);
+  font-size: clamp(8rem, 18vw, 16rem);
   color: var(--accent-muted);
-  letter-spacing: -12px;
+  letter-spacing: -8px;
   user-select: none;
-  line-height: 0.85;
+  line-height: 1;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
   opacity: 1;
-  /* Make sure it's never clipped */
-  overflow: visible;
 }
 
 .hero-content {
@@ -316,11 +314,9 @@ nav {
 ======================== */
 section {
   min-height: 100vh;
-  padding: 6rem 4rem 4rem;
+  padding: 6rem 4rem;
   position: relative;
-  /* overflow hidden clips section numbers — use clip only on x */
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
