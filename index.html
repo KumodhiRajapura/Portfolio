@@ -1,507 +1,540 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="night">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kumodhi Rajapura — Full Stack Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumodhi Rajapura — Full Stack Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- THEME TOGGLE -->
-<button class="theme-toggle" id="themeToggle" title="Toggle day/night">🌙</button>
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" title="Toggle day/night">🌙</button>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">KR<span>.</span></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="btn-primary nav-hire" style="padding:0.6rem 1.4rem;font-size:0.65rem;">Hire Me</a>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">KR<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary nav-hire" style="padding:0.6rem 1.4rem;font-size:0.65rem;">Hire Me</a>
 
-  <!-- HAMBURGER BUTTON -->
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
+    <!-- HAMBURGER BUTTON -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu-items">
-    <a href="#about" class="mobile-menu-item">
-      <span>About</span><span class="mobile-menu-num">001</span>
-    </a>
-    <a href="#skills" class="mobile-menu-item">
-      <span>Skills</span><span class="mobile-menu-num">002</span>
-    </a>
-    <a href="#projects" class="mobile-menu-item">
-      <span>Projects</span><span class="mobile-menu-num">003</span>
-    </a>
-    <a href="#experience" class="mobile-menu-item">
-      <span>Experience</span><span class="mobile-menu-num">004</span>
-    </a>
-    <a href="#contact" class="mobile-menu-item">
-      <span>Contact</span><span class="mobile-menu-num">005</span>
-    </a>
-  </div>
-  <div class="mobile-menu-divider"></div>
-  <a href="#contact" class="mobile-menu-hire">Hire Me →</a>
-</div>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-grid"></div>
-  <div class="hero-number">01</div>
-
-  <div class="hero-content">
-    <div class="hero-name-wrap">
-      <div class="hero-name-line">KUMODHI</div>
-      <div class="hero-name-line accent">RAJAPURA</div>
-    </div>
-
-    <div class="hero-tag">CS Undergraduate @ UCSC <br> Full-Stack &amp; Backend Developer | AI/ML Enthusiast | SaaS &amp; System Design Focused</div>
-
-    <div class="hero-title">
-      Not just websites<span class="cursor-blink"></span>
-    </div>
-    <p class="hero-desc">
-      AI-powered applications, full-stack systems &amp; digital experiences
-      engineered for speed, performance, and impact.
-    </p>
-    <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        View Work
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-items">
+      <a href="#about" class="mobile-menu-item">
+        <span>About</span><span class="mobile-menu-num">001</span>
       </a>
-      <a href="#contact" class="btn-outline">Let's Talk</a>
+      <a href="#skills" class="mobile-menu-item">
+        <span>Skills</span><span class="mobile-menu-num">002</span>
+      </a>
+      <a href="#projects" class="mobile-menu-item">
+        <span>Projects</span><span class="mobile-menu-num">003</span>
+      </a>
+      <a href="#experience" class="mobile-menu-item">
+        <span>Experience</span><span class="mobile-menu-num">004</span>
+      </a>
+      <a href="#contact" class="mobile-menu-item">
+        <span>Contact</span><span class="mobile-menu-num">005</span>
+      </a>
     </div>
+    <div class="mobile-menu-divider"></div>
+    <a href="#contact" class="mobile-menu-hire">Hire Me →</a>
   </div>
 
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-num">8<span>+</span></div>
-      <div class="stat-label">Projects</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">1<span>+</span></div>
-      <div class="stat-label">AI Apps</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">1<span>+</span></div>
-      <div class="stat-label">Years Exp.</div>
-    </div>
-  </div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-number">01</div>
 
-  <div class="hero-photo-wrap" id="heroPhotoWrap">
-    <div class="hero-photo-ring"></div>
-    <div class="hero-photo-ring hero-photo-ring-2"></div>
-    <div class="hero-photo-circle" id="photoCircle">
-      <input type="file" id="photoUpload" accept="image/*" style="display:none;">
-      <img id="photoImg" src="kumodhi.jpeg" alt="Kumodhi Rajapura" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;">
-      <div class="hero-photo-placeholder" id="photoPlaceholder" style="display:none;">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:var(--accent);opacity:0.5;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:2px;color:var(--accent);opacity:0.5;text-transform:uppercase;margin-top:6px;">Click to Add Photo</span>
+    <div class="hero-content">
+      <div class="hero-name-wrap">
+        <div class="hero-name-line">KUMODHI</div>
+        <div class="hero-name-line accent">RAJAPURA</div>
+      </div>
+
+      <div class="hero-tag">CS Undergraduate @ UCSC <br> Full-Stack &amp; Backend Developer | AI/ML Enthusiast | SaaS
+        &amp; System Design Focused</div>
+
+      <div class="hero-title">
+        Not just websites<span class="cursor-blink"></span>
+      </div>
+      <p class="hero-desc">
+        AI-powered applications, full-stack systems &amp; digital experiences
+        engineered for speed, performance, and impact.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+          View Work
+        </a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
       </div>
     </div>
-    <div class="hero-photo-label">// Kumodhi.dev</div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-header animate-in">
-    <span class="section-tag">001</span>
-    <h2 class="section-title">ABOUT</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-visual animate-in">
-      <div class="about-frame">
-        <div class="corner corner-tl"></div>
-        <div class="corner corner-tr"></div>
-        <div class="corner corner-bl"></div>
-        <div class="corner corner-br"></div>
-        <div class="about-inner">
-          <div class="about-code">
-            <div><span class="kw">const</span> developer = {</div>
-            <div>&nbsp;&nbsp;name: <span class="str">"Kumodhi Rajapura"</span>,</div><br>
-            <div>&nbsp;&nbsp;role: <span class="str">"Full Stack Dev"</span>,</div>
-            <div>&nbsp;&nbsp;uni: <span class="str">"UCSC, Colombo"</span>,</div>
-            <div>&nbsp;&nbsp;location: <span class="str">"Sri Lanka"</span>,</div>
-            <div>&nbsp;&nbsp;stack: [</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"React"</span>, <span class="str">"Flask"</span>,</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"LangChain"</span>, <span class="str">"AWS"</span></div>
-            <div>&nbsp;&nbsp;],</div>
-            <div>&nbsp;&nbsp;AI: <span class="kw">true</span>,</div>
-            <div>&nbsp;&nbsp;available: <span class="kw">true</span></div>
-            <div>};</div>
-            <br>
-            <div class="comment">// open to opportunities</div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">8<span>+</span></div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1<span>+</span></div>
+        <div class="stat-label">AI Apps</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1<span>+</span></div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap" id="heroPhotoWrap">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-ring hero-photo-ring-2"></div>
+      <div class="hero-photo-circle" id="photoCircle">
+        <input type="file" id="photoUpload" accept="image/*" style="display:none;">
+        <img id="photoImg" src="kumodhi.jpeg" alt="Kumodhi Rajapura"
+          style="display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        <div class="hero-photo-placeholder" id="photoPlaceholder" style="display:none;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            style="color:var(--accent);opacity:0.5;">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span
+            style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:2px;color:var(--accent);opacity:0.5;text-transform:uppercase;margin-top:6px;">Click
+            to Add Photo</span>
+        </div>
+      </div>
+      <div class="hero-photo-label">// Kumodhi.dev</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-number">02</div>
+    <div class="section-header animate-in">
+      <span class="section-tag">001</span>
+      <h2 class="section-title">ABOUT</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual animate-in">
+        <div class="about-frame">
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+          <div class="about-inner">
+            <div class="about-code">
+              <div><span class="kw">const</span> developer = {</div>
+              <div>&nbsp;&nbsp;name: <span class="str">"Kumodhi Rajapura"</span>,</div><br>
+              <div>&nbsp;&nbsp;role: <span class="str">"Full Stack Dev"</span>,</div>
+              <div>&nbsp;&nbsp;uni: <span class="str">"UCSC, Colombo"</span>,</div>
+              <div>&nbsp;&nbsp;location: <span class="str">"Sri Lanka"</span>,</div>
+              <div>&nbsp;&nbsp;stack: [</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"React"</span>, <span class="str">"Flask"</span>,</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"LangChain"</span>, <span class="str">"AWS"</span></div>
+              <div>&nbsp;&nbsp;],</div>
+              <div>&nbsp;&nbsp;AI: <span class="kw">true</span>,</div>
+              <div>&nbsp;&nbsp;available: <span class="kw">true</span></div>
+              <div>};</div>
+              <br>
+              <div class="comment">// open to opportunities</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="about-text animate-in">
-      <h3>Building what others only imagine.</h3>
-      <p>I'm an undergraduate at the University of Colombo School of Computing (UCSC), passionate about Artificial Intelligence, Software Engineering, and Full-Stack Development.</p>
-      <p>Experienced building AI-powered applications with LLMs, LangChain, and modern web technologies. I bridge the gap between design vision and technical execution — from pharmacy systems to intelligent chatbots.</p>
-      <div class="about-pills">
-        <span class="pill">AI / LLMs</span>
-        <span class="pill">Full-Stack</span>
-        <span class="pill">LangChain</span>
-        <span class="pill">Cloud</span>
-        <span class="pill">Open Source</span>
-        <span class="pill">Community</span>
-      </div>
-      <div style="margin-top:2rem;">
-        <a href="mailto:kumodhirajapura@gmail.com" class="btn-primary" style="display:inline-flex;">Contact Me</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header animate-in">
-    <span class="section-tag">002</span>
-    <h2 class="section-title">SKILLS</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">01</div>
-      <h3>Languages</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">C / C++</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">PHP</span>
-        <span class="skill-tag">SQL</span>
-      </div>
-    </div>
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">02</div>
-      <h3>Frontend</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">React.js</span>
-        <span class="skill-tag">Tailwind CSS</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-      </div>
-    </div>
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">03</div>
-      <h3>Backend</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">Django</span>
-        <span class="skill-tag">MERN Stack</span>
-        <span class="skill-tag">REST APIs</span>
-      </div>
-    </div>
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">04</div>
-      <h3>AI & APIs</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">LangChain</span>
-        <span class="skill-tag">OpenAI API</span>
-        <span class="skill-tag">Pinecone</span>
-      </div>
-    </div>
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">05</div>
-      <h3>Cloud & DevOps</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">AWS</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">Kubernetes</span>
-        <span class="skill-tag">Git / GitHub</span>
-        <span class="skill-tag">Linux</span>
-      </div>
-    </div>
-    <div class="skill-card animate-in">
-      <div class="skill-card-num">06</div>
-      <h3>Currently Learning</h3>
-      <div class="skill-tags">
-        <span class="skill-tag">Java (adv.)</span>
-        <span class="skill-tag">Dart</span>
-        <span class="skill-tag">Angular</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header animate-in">
-    <span class="section-tag">003</span>
-    <h2 class="section-title">PROJECTS</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="projects-list">
-    <div class="project-item animate-in">
-      <div class="project-num">01</div>
-      <div class="project-info">
-        <h3>AI Medical Assistant</h3>
-        <p>AI-powered medical assistant with semantic search and conversational AI workflows, built for intelligent health Q&amp;A.</p>
-        <div class="project-techs">
-          <span class="project-tech">Python</span>
-          <span class="project-tech">Flask</span>
-          <span class="project-tech">LangChain</span>
-          <span class="project-tech">Pinecone</span>
-          <span class="project-tech">OpenAI API</span>
-          <span class="project-tech">AWS</span>
+      <div class="about-text animate-in">
+        <h3>Building what others only imagine.</h3>
+        <p>I'm an undergraduate at the University of Colombo School of Computing (UCSC), passionate about Artificial
+          Intelligence, Software Engineering, and Full-Stack Development.</p>
+        <p>Experienced building AI-powered applications with LLMs, LangChain, and modern web technologies. I bridge the
+          gap between design vision and technical execution — from pharmacy systems to intelligent chatbots.</p>
+        <div class="about-pills">
+          <span class="pill">AI / LLMs</span>
+          <span class="pill">Full-Stack</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">Cloud</span>
+          <span class="pill">Open Source</span>
+          <span class="pill">Community</span>
+        </div>
+        <div style="margin-top:2rem;">
+          <a href="mailto:kumodhirajapura@gmail.com" class="btn-primary" style="display:inline-flex;">Contact Me</a>
         </div>
       </div>
-      <div class="project-arrow">→</div>
     </div>
-    <div class="project-item animate-in">
-      <div class="project-num">02</div>
-      <div class="project-info">
-        <h3>Medinex — Pharmacy System</h3>
-        <p>Comprehensive pharmacy management system handling medicine inventory, billing, and patient records. 2nd Year Group Project.</p>
-        <div class="project-techs">
-          <span class="project-tech">HTML</span>
-          <span class="project-tech">CSS</span>
-          <span class="project-tech">JavaScript</span>
-          <span class="project-tech">PHP</span>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-number">03</div>
+    <div class="section-header animate-in">
+      <span class="section-tag">002</span>
+      <h2 class="section-title">SKILLS</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">01</div>
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">SQL</span>
         </div>
       </div>
-      <div class="project-arrow">→</div>
-    </div>
-    <div class="project-item animate-in">
-      <div class="project-num">03</div>
-      <div class="project-info">
-        <h3>AI PDF Chatbot System</h3>
-        <p>Intelligent chatbot with contextual query handling and vector-based retrieval using modern LLM orchestration.</p>
-        <div class="project-techs">
-          <span class="project-tech">LLMs</span>
-          <span class="project-tech">LangChain</span>
-          <span class="project-tech">Pinecone</span>
-          <span class="project-tech">OpenAI API</span>
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">02</div>
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
         </div>
       </div>
-      <div class="project-arrow">→</div>
-    </div>
-    <div class="project-item animate-in">
-      <div class="project-num">04</div>
-      <div class="project-info">
-        <h3>Event Booking System</h3>
-        <p>Full-stack MERN platform with JWT authentication, role-based access control, and responsive UI for event management.</p>
-        <div class="project-techs">
-          <span class="project-tech">MongoDB</span>
-          <span class="project-tech">Express.js</span>
-          <span class="project-tech">React.js</span>
-          <span class="project-tech">Node.js</span>
-          <span class="project-tech">JWT</span>
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">03</div>
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">MERN Stack</span>
+          <span class="skill-tag">REST APIs</span>
         </div>
       </div>
-      <div class="project-arrow">→</div>
-    </div>
-    <div class="project-item animate-in">
-      <div class="project-num">05</div>
-      <div class="project-info">
-        <h3>Real Estate Web App</h3>
-        <p>Responsive React.js &amp; Tailwind CSS frontend with reusable component library and modern, accessible layouts.</p>
-        <div class="project-techs">
-          <span class="project-tech">React.js</span>
-          <span class="project-tech">Tailwind CSS</span>
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">04</div>
+        <h3>AI & APIs</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">OpenAI API</span>
+          <span class="skill-tag">Pinecone</span>
         </div>
       </div>
-      <div class="project-arrow">→</div>
-    </div>
-    <div class="project-item animate-in">
-      <div class="project-num">06</div>
-      <div class="project-info">
-        <h3>Student Management Systems</h3>
-        <p>Two platforms — Django/SQLite with full CRUD &amp; authentication, and PHP/MySQL for web-based record management.</p>
-        <div class="project-techs">
-          <span class="project-tech">Django</span>
-          <span class="project-tech">SQLite</span>
-          <span class="project-tech">PHP</span>
-          <span class="project-tech">MySQL</span>
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">05</div>
+        <h3>Cloud & DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Linux</span>
         </div>
       </div>
-      <div class="project-arrow">→</div>
+      <div class="skill-card animate-in">
+        <div class="skill-card-num">06</div>
+        <h3>Currently Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Java (adv.)</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">Angular</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-header animate-in">
-    <span class="section-tag">004</span>
-    <h2 class="section-title">EXPERIENCE</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="exp-timeline">
-    <div class="exp-item animate-in">
-      <div class="exp-year">2026 — 2027</div>
-      <div class="exp-role">Secretary</div>
-      <div class="exp-company">// Rotaract Club of UCSC</div>
-      <p class="exp-desc">Handling official documentation, meeting coordination, and internal communications for the club.</p>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-number">04</div>
+    <div class="section-header animate-in">
+      <span class="section-tag">003</span>
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="section-line"></div>
     </div>
-    <div class="exp-item animate-in">
-      <div class="exp-year">2025 — 2026</div>
-      <div class="exp-role">PR Director</div>
-      <div class="exp-company">// Rotaract Club of UCSC</div>
-      <p class="exp-desc">Managed public relations, promotional campaigns, and communications for club events and community initiatives.</p>
+    <div class="projects-list">
+      <div class="project-item animate-in">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <h3>AI Medical Assistant</h3>
+          <p>AI-powered medical assistant with semantic search and conversational AI workflows, built for intelligent
+            health Q&amp;A.</p>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">Flask</span>
+            <span class="project-tech">LangChain</span>
+            <span class="project-tech">Pinecone</span>
+            <span class="project-tech">OpenAI API</span>
+            <span class="project-tech">AWS</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-item animate-in">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <h3>Medinex — Pharmacy System</h3>
+          <p>Comprehensive pharmacy management system handling medicine inventory, billing, and patient records. 2nd
+            Year Group Project.</p>
+          <div class="project-techs">
+            <span class="project-tech">HTML</span>
+            <span class="project-tech">CSS</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">PHP</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-item animate-in">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <h3>AI PDF Chatbot System</h3>
+          <p>Intelligent chatbot with contextual query handling and vector-based retrieval using modern LLM
+            orchestration.</p>
+          <div class="project-techs">
+            <span class="project-tech">LLMs</span>
+            <span class="project-tech">LangChain</span>
+            <span class="project-tech">Pinecone</span>
+            <span class="project-tech">OpenAI API</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-item animate-in">
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <h3>Event Booking System</h3>
+          <p>Full-stack MERN platform with JWT authentication, role-based access control, and responsive UI for event
+            management.</p>
+          <div class="project-techs">
+            <span class="project-tech">MongoDB</span>
+            <span class="project-tech">Express.js</span>
+            <span class="project-tech">React.js</span>
+            <span class="project-tech">Node.js</span>
+            <span class="project-tech">JWT</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-item animate-in">
+        <div class="project-num">05</div>
+        <div class="project-info">
+          <h3>Real Estate Web App</h3>
+          <p>Responsive React.js &amp; Tailwind CSS frontend with reusable component library and modern, accessible
+            layouts.</p>
+          <div class="project-techs">
+            <span class="project-tech">React.js</span>
+            <span class="project-tech">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+      <div class="project-item animate-in">
+        <div class="project-num">06</div>
+        <div class="project-info">
+          <h3>Student Management Systems</h3>
+          <p>Two platforms — Django/SQLite with full CRUD &amp; authentication, and PHP/MySQL for web-based record
+            management.</p>
+          <div class="project-techs">
+            <span class="project-tech">Django</span>
+            <span class="project-tech">SQLite</span>
+            <span class="project-tech">PHP</span>
+            <span class="project-tech">MySQL</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
     </div>
-    <div class="exp-item animate-in">
-      <div class="exp-year">2025</div>
-      <div class="exp-role">Team Leader — B2B, Incoming Global Volunteer</div>
-      <div class="exp-company">// AIESEC in Colombo</div>
-      <p class="exp-desc">Led B2B engagement and collaborated across teams for partnership development and volunteer programme management.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-number">05</div>
+    <div class="section-header animate-in">
+      <span class="section-tag">004</span>
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="section-line"></div>
     </div>
-    <div class="exp-item animate-in">
-      <div class="exp-year">2026</div>
-      <div class="exp-role">Volunteer</div>
-      <div class="exp-company">// Ironman 70.3 Colombo</div>
-      <p class="exp-desc">Supported event operations for one of Sri Lanka's premier triathlon events.</p>
+    <div class="exp-timeline">
+      <div class="exp-item animate-in">
+        <div class="exp-year">2026 — 2027</div>
+        <div class="exp-role">Secretary</div>
+        <div class="exp-company">// Rotaract Club of UCSC</div>
+        <p class="exp-desc">Handling official documentation, meeting coordination, and internal communications for the
+          club.</p>
+      </div>
+      <div class="exp-item animate-in">
+        <div class="exp-year">2025 — 2026</div>
+        <div class="exp-role">PR Director</div>
+        <div class="exp-company">// Rotaract Club of UCSC</div>
+        <p class="exp-desc">Managed public relations, promotional campaigns, and communications for club events and
+          community initiatives.</p>
+      </div>
+      <div class="exp-item animate-in">
+        <div class="exp-year">2025</div>
+        <div class="exp-role">Team Leader — B2B, Incoming Global Volunteer</div>
+        <div class="exp-company">// AIESEC in Colombo</div>
+        <p class="exp-desc">Led B2B engagement and collaborated across teams for partnership development and volunteer
+          programme management.</p>
+      </div>
+      <div class="exp-item animate-in">
+        <div class="exp-year">2026</div>
+        <div class="exp-role">Volunteer</div>
+        <div class="exp-company">// Ironman 70.3 Colombo</div>
+        <p class="exp-desc">Supported event operations for one of Sri Lanka's premier triathlon events.</p>
+      </div>
+      <div class="exp-item animate-in">
+        <div class="exp-year">2023 — 2024</div>
+        <div class="exp-role">Data Entry Assistant</div>
+        <div class="exp-company">// Nenasala Maradhagahamula</div>
+        <p class="exp-desc">Managed data entry, record maintenance, and administrative support. Maintained accurate
+          digital documentation and improved filing workflows.</p>
+      </div>
     </div>
-    <div class="exp-item animate-in">
-      <div class="exp-year">2023 — 2024</div>
-      <div class="exp-role">Data Entry Assistant</div>
-      <div class="exp-company">// Nenasala Maradhagahamula</div>
-      <p class="exp-desc">Managed data entry, record maintenance, and administrative support. Maintained accurate digital documentation and improved filing workflows.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-number">06</div>
+    <div class="contact-inner animate-in">
+      <div class="contact-headline">
+        LET'S BUILD<br><span>SOMETHING</span><br>GREAT
+      </div>
+      <p class="contact-sub">Open for internships, projects, collaborations, and opportunities in AI &amp; Full-Stack.
+      </p>
+      <a href="mailto:kumodhirajapura@gmail.com" class="contact-email">kumodhirajapura@gmail.com</a>
+      <div style="margin-top:1rem;">
+        <a href="mailto:kumodhirajapura@gmail.com" class="btn-primary" style="margin:0 auto;">Send Message</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/KumodhiRajapura" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/kumodhi-rajapura" target="_blank" class="social-link">LinkedIn</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-inner animate-in">
-    <div class="contact-headline">
-      LET'S BUILD<br><span>SOMETHING</span><br>GREAT
-    </div>
-    <p class="contact-sub">Open for internships, projects, collaborations, and opportunities in AI &amp; Full-Stack.</p>
-    <a href="mailto:kumodhirajapura@gmail.com" class="contact-email">kumodhirajapura@gmail.com</a>
-    <div style="margin-top:1rem;">
-      <a href="mailto:kumodhirajapura@gmail.com" class="btn-primary" style="margin:0 auto;">Send Message</a>
-    </div>
-    <div class="social-links">
-      <a href="https://github.com/KumodhiRajapura" target="_blank" class="social-link">GitHub</a>
-      <a href="https://linkedin.com/in/kumodhi-rajapura" target="_blank" class="social-link">LinkedIn</a>
-    </div>
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 <span>Kumodhi Rajapura</span>. All rights reserved.</p>
+    <p>Designed &amp; built with <span>♥</span> and too much coffee.</p>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 <span>Kumodhi Rajapura</span>. All rights reserved.</p>
-  <p>Designed &amp; built with <span>♥</span> and too much coffee.</p>
-</footer>
+  <script>
+    // THEME TOGGLE
+    const html = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    let theme = 'night';
 
-<script>
-  // THEME TOGGLE
-  const html = document.documentElement;
-  const btn = document.getElementById('themeToggle');
-  let theme = 'night';
-
-  btn.addEventListener('click', () => {
-    theme = theme === 'night' ? 'day' : 'night';
-    html.setAttribute('data-theme', theme);
-    btn.textContent = theme === 'night' ? '🌙' : '☀️';
-  });
-
-  // CUSTOM CURSOR
-  const cursor = document.getElementById('cursor');
-  const ring   = document.getElementById('cursorRing');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
-  });
-
-  function animateRing() {
-    rx += (mx - rx - 18) * 0.12;
-    ry += (my - ry - 18) * 0.12;
-    ring.style.transform = `translate(${rx}px, ${ry}px)`;
-    requestAnimationFrame(animateRing);
-  }
-  animateRing();
-
-  document.querySelectorAll('a, button, .project-item, .skill-card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      ring.style.width  = '60px';
-      ring.style.height = '60px';
-      ring.style.opacity = '0.8';
+    btn.addEventListener('click', () => {
+      theme = theme === 'night' ? 'day' : 'night';
+      html.setAttribute('data-theme', theme);
+      btn.textContent = theme === 'night' ? '🌙' : '☀️';
     });
-    el.addEventListener('mouseleave', () => {
-      ring.style.width  = '36px';
-      ring.style.height = '36px';
-      ring.style.opacity = '0.5';
+
+    // CUSTOM CURSOR
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
     });
-  });
 
-  // SCROLL ANIMATIONS
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      }
+    function animateRing() {
+      rx += (mx - rx - 18) * 0.12;
+      ry += (my - ry - 18) * 0.12;
+      ring.style.transform = `translate(${rx}px, ${ry}px)`;
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    document.querySelectorAll('a, button, .project-item, .skill-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width = '60px';
+        ring.style.height = '60px';
+        ring.style.opacity = '0.8';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width = '36px';
+        ring.style.height = '36px';
+        ring.style.opacity = '0.5';
+      });
     });
-  }, { threshold: 0.1 });
 
-  document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+    // SCROLL ANIMATIONS
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
 
-  // ACTIVE NAV LINK ON SCROLL
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
+    document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 200) current = s.id;
+    // ACTIVE NAV LINK ON SCROLL
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 200) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+      });
     });
-    navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+
+    // HAMBURGER MENU 
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
-  });
 
-  // HAMBURGER MENU 
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
-    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-  });
-
-  document.querySelectorAll('.mobile-menu-item, .mobile-menu-hire').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      if (href && href.startsWith('#')) {
-        e.preventDefault();
-        hamburger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
-        setTimeout(() => {
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 380);
-      } else {
-        hamburger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
-      }
+    document.querySelectorAll('.mobile-menu-item, .mobile-menu-hire').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          hamburger.classList.remove('open');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+          setTimeout(() => {
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 380);
+        } else {
+          hamburger.classList.remove('open');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
     });
-  });
-</script>
+  </script>
 </body>
+
 </html>
