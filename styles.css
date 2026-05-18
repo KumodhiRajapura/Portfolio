@@ -172,8 +172,10 @@ nav {
 }
 
 .hero-stats {
-  position: relative; z-index: 3;
+  position: relative;
+  z-index: 3;
   display: flex;
+  justify-content: flex-end; 
   gap: 3rem;
   grid-column: 1;
   grid-row: 2;
