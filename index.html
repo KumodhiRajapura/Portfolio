@@ -404,7 +404,7 @@
 </footer>
 
 <script>
-  // ── THEME TOGGLE ──
+  // THEME TOGGLE
   const html = document.documentElement;
   const btn = document.getElementById('themeToggle');
   let theme = 'night';
@@ -415,7 +415,7 @@
     btn.textContent = theme === 'night' ? '🌙' : '☀️';
   });
 
-  // ── CUSTOM CURSOR ──
+  // CUSTOM CURSOR
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
@@ -446,7 +446,7 @@
     });
   });
 
-  // ── SCROLL ANIMATIONS ──
+  // SCROLL ANIMATIONS
   const observer = new IntersectionObserver(entries => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
@@ -457,7 +457,7 @@
 
   document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 
-  // ── ACTIVE NAV LINK ON SCROLL ──
+  // ACTIVE NAV LINK ON SCROLL
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -471,7 +471,7 @@
     });
   });
 
-  // ── HAMBURGER MENU ──
+  // HAMBURGER MENU 
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
 
