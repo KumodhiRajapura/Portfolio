@@ -460,7 +460,7 @@ section {
    CONTACT
 ======================== */
 #contact { background: var(--bg-2); text-align: center; }
-.contact-inner { max-width: 700px; margin: 0 auto; }
+.contact-inner { max-width: 700px; margin: 10 auto; }
 .contact-headline { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: 2px; margin-bottom: 1.5rem; }
 .contact-headline span { color: var(--accent); }
 .contact-sub { color: var(--text-muted); margin-bottom: 3rem; font-size: 1rem; }
