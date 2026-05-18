@@ -44,6 +44,10 @@
   --shadow:      rgba(196,75,26,0.12);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 
 body {
   background: var(--bg);
@@ -311,7 +315,7 @@ nav {
    SECTIONS — full viewport height, scroll-snappable
 ======================== */
 section {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 6rem 4rem 4rem;
   position: relative;
   /* overflow hidden clips section numbers — use clip only on x */
@@ -379,7 +383,7 @@ section {
 #skills { background: var(--bg); }
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; flex: 1; }
 .skill-card {
-  background: var(--bg-2); padding: 2rem; position: relative;
+  background: var(--bg-3); padding: 2rem; position: relative;
   overflow: hidden; transition: background 0.2s;
 }
 .skill-card::before {
@@ -616,9 +620,20 @@ footer span { color: var(--accent); }
 /* ========================
    SCROLLBAR
 ======================== */
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--accent)}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+}
 
 /* ========================
    TABLET (max-width: 1024px)
