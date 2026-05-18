@@ -165,6 +165,15 @@ nav {
   letter-spacing: -10px; user-select: none; line-height: 1;
 }
 
+.section-number {
+  position: absolute; right: -1rem; bottom: 5%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(6rem, 16vw, 14rem);
+  color: var(--accent-muted);
+  letter-spacing: -8px; user-select: none; line-height: 1;
+  pointer-events: none; z-index: 0;
+}
+
 .hero-content {
   position: relative; z-index: 3;
   grid-column: 1;
