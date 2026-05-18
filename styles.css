@@ -643,18 +643,18 @@ footer span { color: var(--accent); }
   .hero-photo-wrap {
     position: static !important;
     transform: none !important;
-    width: 140px !important;
-    height: 140px !important;
+    width: 130px !important;
+    height: 130px !important;
     margin: 2rem 0 0 !important;
     order: 2;
-    align-self: flex-end;
+    align-self: flex-start;
     overflow: visible !important;
     isolation: isolate;
     flex-shrink: 0;
   }
   .hero-photo-circle {
-    width: 140px !important;
-    height: 140px !important;
+    width: 130px !important;
+    height: 130px !important;
     flex-shrink: 0;
   }
   .hero-photo-ring { inset: -8px !important; }
@@ -667,14 +667,18 @@ footer span { color: var(--accent); }
   }
 
   .hero-stats {
-    order: 3;
+    order: 2;
     display: flex !important;
-    flex-direction: row !important;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 3rem !important;
+    flex-direction: column !important;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+    margin-top: 2rem !important;
     padding-top: 0;
-    width: 100%;
+    padding-left: 1.5rem;
+    flex: 1;
+    align-self: center;
+    width: auto;
+    justify-content: center;
   }
 
   .stat {
@@ -822,15 +826,16 @@ footer span { color: var(--accent); }
   .hero-photo-wrap {
     width: 110px !important;
     height: 110px !important;
-    align-self: flex-end !important;
+    align-self: flex-start !important;
   }
   .hero-photo-circle {
     width: 110px !important;
     height: 110px !important;
   }
   .hero-stats {
-    gap: 1rem;
-    margin-top: 2.5rem !important;
+    gap: 0.9rem;
+    padding-left: 1.2rem;
+    margin-top: 2rem !important;
   }
   .stat-num { font-size: 1.8rem; }
 }
