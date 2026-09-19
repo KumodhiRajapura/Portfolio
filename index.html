@@ -490,16 +490,6 @@
   </footer>
 
   <script>
-    const html = document.documentElement;
-    const btn = document.getElementById('themeToggle');
-    let theme = 'night';
-
-    btn.addEventListener('click', () => {
-      theme = theme === 'night' ? 'day' : 'night';
-      html.setAttribute('data-theme', theme);
-      btn.textContent = theme === 'night' ? '🌙' : '☀️';
-    });
-
     const cursor = document.getElementById('cursor');
     const ring = document.getElementById('cursorRing');
     let mx = 0, my = 0, rx = 0, ry = 0;
