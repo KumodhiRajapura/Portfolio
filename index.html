@@ -19,7 +19,7 @@
   <button class="theme-toggle" id="themeToggle" title="Toggle day/night">🌙</button>
 
   <nav>
-    <div class="nav-logo">KR<span>.</span></div>
+    <a href="#hero" class="nav-logo">KR<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -269,7 +269,7 @@
         <div class="project-item animate-in">
           <div class="project-num">01</div>
           <div class="project-info">
-            <h3>Vellora.lk — E-Commerce Phone Store <span style="color:var(--accent);font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:1px;">// ONGOING</span></h3>
+            <h3>Vellora.lk - E-Commerce Phone Store <span style="color:var(--accent);font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:1px;">// ONGOING</span></h3>
             <p>Full-stack e-commerce platform for a phone retail business, independently built with product browsing,
               cart management, authentication, checkout, and account management.</p>
             <div class="project-techs">
@@ -287,7 +287,7 @@
         <div class="project-item animate-in">
           <div class="project-num">02</div>
           <div class="project-info">
-            <h3>MLOpsidian — Flood Timeline Sri Lanka <span style="color:var(--accent);font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:1px;">// 1ST RUNNER-UP</span></h3>
+            <h3>MLOpsidian - Flood Timeline Sri Lanka <span style="color:var(--accent);font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:1px;">// 1ST RUNNER-UP</span></h3>
             <p>Machine learning &amp; GIS-based platform predicting flood risk scores across all 25 districts of Sri
               Lanka. Processed 20,886 records with an XGBoost/LightGBM/CatBoost ensemble and an end-to-end MLOps
               pipeline.</p>
@@ -336,7 +336,7 @@
         <div class="project-item animate-in">
           <div class="project-num">05</div>
           <div class="project-info">
-            <h3>Medinex — Pharmacy System</h3>
+            <h3>Medinex - Pharmacy System</h3>
             <p>Comprehensive pharmacy management system handling medicine inventory, billing, and patient records. 2nd
               Year Group Project.</p>
             <div class="project-techs">
@@ -381,7 +381,7 @@
           <div class="project-num">08</div>
           <div class="project-info">
             <h3>Student Management Systems</h3>
-            <p>Two platforms — Django/SQLite with full CRUD &amp; authentication, and PHP/MySQL for web-based record
+            <p>Two platforms - Django/SQLite with full CRUD &amp; authentication, and PHP/MySQL for web-based record
               management.</p>
             <div class="project-techs">
               <span class="project-tech">Django</span>
@@ -409,34 +409,34 @@
           <div class="exp-year">Ongoing</div>
           <div class="exp-role">AI Engineer &amp; Full-Stack Developer</div>
           <div class="exp-company">// FabFlow</div>
-          <p class="exp-desc">Contributing to a SaaS-based manufacturing ERP &amp; CRM platform — working across AI
+          <p class="exp-desc">Contributing to a SaaS-based manufacturing ERP &amp; CRM platform - working across AI
             engineering, backend development, system integration, and full-stack development with Python, FastAPI,
             Node.js, Next.js, and PostgreSQL.</p>
         </div>
         <div class="exp-item animate-in">
-          <div class="exp-year">2026 — 2027</div>
+          <div class="exp-year">2026 - 2027</div>
           <div class="exp-role">Secretary</div>
           <div class="exp-company">// Rotaract Club of UCSC</div>
           <p class="exp-desc">Handling official documentation, meeting coordination, and internal communications for the
             club.</p>
         </div>
         <div class="exp-item animate-in">
-          <div class="exp-year">2026 — 2027</div>
+          <div class="exp-year">2026 - 2027</div>
           <div class="exp-role">Assistant Secretary</div>
           <div class="exp-company">// Robotics and Automation Club of UCSC</div>
           <p class="exp-desc">Supporting club administration, documentation, and coordination for robotics &amp;
             automation initiatives.</p>
         </div>
         <div class="exp-item animate-in">
-          <div class="exp-year">2025 — 2026</div>
+          <div class="exp-year">2025 - 2026</div>
           <div class="exp-role">PR Director</div>
           <div class="exp-company">// Rotaract Club of UCSC</div>
           <p class="exp-desc">Managed public relations, promotional campaigns, and communications for club events and
             community initiatives.</p>
         </div>
         <div class="exp-item animate-in">
-          <div class="exp-year">2025 — 2026</div>
-          <div class="exp-role">Team Leader — B2B, Incoming Global Volunteer</div>
+          <div class="exp-year">2025 - 2026</div>
+          <div class="exp-role">Team Leader - B2B, Incoming Global Volunteer</div>
           <div class="exp-company">// AIESEC in Colombo</div>
           <p class="exp-desc">Led B2B engagement and collaborated across teams for partnership development and volunteer
             programme management.</p>
@@ -448,7 +448,7 @@
           <p class="exp-desc">Supported event operations for one of Sri Lanka's premier triathlon events.</p>
         </div>
         <div class="exp-item animate-in">
-          <div class="exp-year">2023 — 2024</div>
+          <div class="exp-year">2023 - 2024</div>
           <div class="exp-role">Data Entry Assistant</div>
           <div class="exp-company">// Nenasala Maradhagahamula</div>
           <p class="exp-desc">Managed data entry, record maintenance, and administrative support. Maintained accurate
@@ -545,6 +545,26 @@
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
+    function scrollToSection(targetId) {
+      const target = document.querySelector(targetId);
+      if (!target) return;
+      const nav = document.querySelector('nav');
+      const navHeight = nav ? nav.offsetHeight : 80;
+      const header = target.querySelector('.section-header') || target;
+      const top = header.getBoundingClientRect().top + window.scrollY - navHeight - 12;
+      window.scrollTo({ top, behavior: 'smooth', block: 'start' });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
+        const targetId = href;
+        event.preventDefault();
+        scrollToSection(targetId);
+      });
+    });
+
     window.addEventListener('scroll', () => {
       let current = '';
       sections.forEach(s => {
@@ -573,10 +593,7 @@
           mobileMenu.classList.remove('open');
           document.body.style.overflow = '';
           setTimeout(() => {
-            const target = document.querySelector(href);
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            scrollToSection(href);
           }, 380);
         } else {
           hamburger.classList.remove('open');
